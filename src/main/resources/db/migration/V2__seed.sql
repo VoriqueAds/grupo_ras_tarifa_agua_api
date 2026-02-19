@@ -1,5 +1,9 @@
 -- V2 - Seed opcional com exemplo do PDF (INDUSTRIAL)
 
+/* 
+  Esta migração opcional insere uma tabela tarifária de exemplo com faixas progressivas para a categoria INDUSTRIAL, conforme o modelo do PDF fornecido. As faixas tarifárias são definidas com limites de consumo e valores unitários correspondentes. A cláusula ON CONFLICT DO NOTHING garante que a inserção seja idempotente, evitando erros caso os registros já existam.
+*/
+
 INSERT INTO tariff_table (id, name, valid_from, valid_to, active)
 VALUES ('11111111-1111-1111-1111-111111111111', 'Tabela Exemplo (PDF)', '2026-01-01', NULL, TRUE)
 ON CONFLICT DO NOTHING;

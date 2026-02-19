@@ -5,6 +5,8 @@ import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
+// Entidade JPA para representar as faixas tarifárias associadas a uma tabela tarifária, com início, fim e valor unitário para cada faixa progressiva.
+
 @Entity
 @Table(name = "tariff_bracket")
 public class FaixaTarifaria {

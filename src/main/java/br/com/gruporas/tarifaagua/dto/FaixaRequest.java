@@ -6,6 +6,8 @@ import jakarta.validation.constraints.NotNull;
 
 import java.math.BigDecimal;
 
+// DTO para requisição de criação ou atualização de uma faixa tarifária, contendo o início, fim e valor unitário da faixa, com validação de campos.
+
 public record FaixaRequest(
     @Min(0) int inicio,
     @NotNull Integer fim,

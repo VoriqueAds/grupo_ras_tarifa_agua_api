@@ -14,6 +14,8 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.*;
 import java.util.stream.Collectors;
 
+// Serviço para gerenciamento de tabelas tarifárias e faixas progressivas, contendo a lógica para criar novas tabelas tarifárias com validação das faixas, listar tabelas ativas, excluir (desativar) tabelas e listar faixas da tabela ativa por categoria. Utilizado pelos controladores para realizar operações relacionadas às tabelas tarifárias e suas faixas.
+
 @Service
 public class TabelaTarifariaService {
 

@@ -16,6 +16,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+// Serviço para cálculo do valor a pagar com base no consumo total e na tabela tarifária ativa. Contém a lógica para calcular o valor total a pagar, considerando as faixas tarifárias e o consumo informado, e retorna um objeto CalculoResponse com os resultados do cálculo.
+
 @Service
 public class CalculoService {
 

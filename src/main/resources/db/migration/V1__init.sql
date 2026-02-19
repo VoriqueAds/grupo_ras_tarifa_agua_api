@@ -1,5 +1,9 @@
 -- V1 - Modelo relacional para Tabela Tarifária e Faixas (parametrizável)
 
+/* 
+  Esta migração inicial cria as tabelas necessárias para armazenar as informações de tabelas tarifárias e suas faixas associadas. A tabela "tariff_table" armazena os dados principais da tabela tarifária, enquanto a tabela "tariff_bracket" armazena as faixas tarifárias associadas a cada tabela. As constraints e índices garantem a integridade dos dados e otimizam as consultas.
+*/
+
 CREATE TABLE IF NOT EXISTS tariff_table (
   id UUID PRIMARY KEY,
   name VARCHAR(120) NOT NULL,

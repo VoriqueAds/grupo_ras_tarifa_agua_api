@@ -12,6 +12,8 @@ import java.time.OffsetDateTime;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+// Manipulador global de exceções para a API, interceptando exceções lançadas pelos controladores e retornando respostas de erro padronizadas com informações sobre o erro, status HTTP e caminho da requisição. Trata exceções específicas como ApiException e MethodArgumentNotValidException, bem como exceções inesperadas.
+
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 

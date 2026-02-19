@@ -6,6 +6,8 @@ import br.com.gruporas.tarifaagua.service.CalculoService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
+// Controlador REST para cálculos de valor a pagar com base nas faixas progressivas
+
 @RestController
 @RequestMapping("/api/calculos")
 public class CalculoController {

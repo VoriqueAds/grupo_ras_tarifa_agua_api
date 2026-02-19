@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.UUID;
 
+// Controlador REST para gerenciamento de tabelas tarifárias e faixas progressivas
+
 @RestController
 @RequestMapping("/api/tabelas-tarifarias")
 public class TabelaTarifariaController {

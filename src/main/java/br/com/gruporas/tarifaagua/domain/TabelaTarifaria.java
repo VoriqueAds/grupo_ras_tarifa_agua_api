@@ -5,6 +5,8 @@ import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
+// Entidade JPA para representar as tabelas tarifárias, com nome, vigência e status de ativa/inativa, associada a faixas tarifárias para cada categoria de consumidor.
+
 @Entity
 @Table(name = "tariff_table")
 public class TabelaTarifaria {
