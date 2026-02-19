@@ -10,7 +10,7 @@ API REST em **Java + Spring Boot + PostgreSQL** para **cadastrar tabelas tarifá
 * Flyway
 * Swagger (springdoc-openapi)
 
-## Como rodar (sem Docker)
+## Como rodar
 
 ### 1\) PostgreSQL
 
@@ -108,3 +108,22 @@ V1\_\_init.sql: estrutura do banco
 
 V2\_\_seed.sql: seed opcional (exemplo)
 
+## Fluxo de Testes via Swagger
+
+### 1️⃣ Criação da Tabela Tarifária
+![POST Tabela](tarifaagua/docs/01_post_tabela-tarifaria.png)
+
+---
+
+### 2️⃣ Listagem das Tabelas
+![GET Tabelas](tarifaagua/docs/02_get_tabelas-tarifarias.png)
+
+---
+
+### 3️⃣ Cálculo de Consumo
+![POST Cálculo](tarifaagua/docs/03_post_calculo-consumo.png)
+
+---
+
+### 4️⃣ Remoção de Tabela
+![DELETE Tabela](tarifaagua/docs/04_delete_tabela-tarifaria.png)
